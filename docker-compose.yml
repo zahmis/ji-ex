@@ -1,15 +1,19 @@
 version: '3.8'
 services: 
-  ji-ex:
+  mongo:
+    image: mongo
+    ports: 
+      - 27017:27017
+
+
+  node:
+    user: node
     build: 
       context:  .
       dockerfile: Dockerfile
-    container_name: ji-ex
-    command: sh -c "yarn dev"
     ports: 
       - 3000:3000
       volumes:
       - .:/ji-ex
       - /ji-ex/node_modules
 
-      

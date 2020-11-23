@@ -1,7 +1,7 @@
 module.exports = {
-  // extends: [
-  //   'weseek',
-  // ],
+  extends: [
+    'weseek',
+  ],
   rules: {
     // 'import/prefer-default-export': 'off',
     indent: [

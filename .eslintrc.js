@@ -1,7 +1,5 @@
 module.exports = {
-  extends: [
-    'weseek',
-  ],
+  extends: ['weseek'],
   rules: {
     // 'import/prefer-default-export': 'off',
     indent: [
@@ -9,7 +7,12 @@ module.exports = {
       2,
       {
         SwitchCase: 1,
-        ignoredNodes: ['JSXElement *', 'JSXElement', 'JSXAttribute', 'JSXSpreadAttribute'],
+        ignoredNodes: [
+          'JSXElement *',
+          'JSXElement',
+          'JSXAttribute',
+          'JSXSpreadAttribute',
+        ],
         ArrayExpression: 'first',
         FunctionDeclaration: { body: 1, parameters: 2 },
         FunctionExpression: { body: 1, parameters: 2 },

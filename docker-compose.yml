@@ -1,17 +1,17 @@
-version: '3.8'
+version: "3.8"
 
 services:
   mongo:
     image: mongo
-    ports: 
+    ports:
       - 27017:27017
 
   node:
     user: node
-    build: 
-      context:  .
+    build:
+      context: .
       dockerfile: Dockerfile
-    ports: 
+    ports:
       - 3000:3000
     volumes:
       - .:/ji-ex

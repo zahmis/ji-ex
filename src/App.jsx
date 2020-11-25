@@ -1,7 +1,12 @@
-// import React from 'react';
+// eslint-disable-next-line no-unused-vars
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-const App = () => {
-  return <div>ji-ex</div>;
-};
-
-export default App;
+ReactDOM.render(
+  <React.Fragment>
+    <div>
+      hoge
+    </div>
+    </React.Fragment>,
+  document.getElementById('app'),
+);

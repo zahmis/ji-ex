@@ -20,10 +20,7 @@ class Blog extends React.Component {
   render() {
     return (
         <div>
-            <Article title={'ji-boys'}
-                     contents={'hgoe'}
-                     isPublished={this.state.isPublished}
-                     toggle={() => this.togglePublished()}
+            <Article title={'ji-boys'} contents={'hgoe'} isPublished={this.state.isPublished} toggle={() => this.togglePublished()}
           />
         </div>
     );

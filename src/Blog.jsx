@@ -1,13 +1,34 @@
 import React from 'react';
 import Article from './Article';
 
-const Blog = () => {
-  return (
-    <div>
-      <Article title={'ji-boys'}
-      contents={'are you ji-boys'}
-      />
-    </div>
-  );
-};
+class Blog extends React.Component {
+
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      isPublished: false,
+    };
+  }
+
+  togglePublished = () => {
+    this.setState({
+      isPublished: !this.state.isPublished,
+    });
+  };
+
+  render() {
+    return (
+        <div>
+            <Article title={'ji-boys'}
+                     contents={'hgoe'}
+                     isPublished={this.state.isPublished}
+                     toggle={() => this.togglePublished()}
+          />
+        </div>
+    );
+  }
+
+}
+
 export default Blog;

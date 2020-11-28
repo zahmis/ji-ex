@@ -2,6 +2,7 @@ module.exports = {
   extends: ['weseek'],
   rules: {
     'import/prefer-default-export': 'off',
+    'no-unused-vars': 'off',
     indent: [
       'error',
       2,
